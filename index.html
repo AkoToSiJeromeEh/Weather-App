@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Darling Forecast</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/general.css">
+    <link rel="stylesheet" href="style/landing-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato&family=Montserrat&family=Patua+One&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body >
+    <section class="loading-section" id="Background">
+    <div class="container-fluid text-center">
+        <div class="d-flex flex-column align-items-center">
+            <div class="anim-top">
+            <img class="img-fluid" src="icons/sun clouds7.png" alt="" height="150px" width="150px">
+            <h1>Darling Forecast</h1>
+            </div>
+            <div class="">
+                <img class="mt-3" src="svg/Spin-1s-200px (2).svg" alt="My SVG Image" width="100" height="100">
+            </div>
+            <p class="loading mt-5" id="loading"></p>
+        </div>
+    </div>
+ </section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="javascript/landing.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.clouds.min.js"></script>
+<script>
+VANTA.CLOUDS({
+  el: "#Background",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  backgroundColor: 0xffc5c5,
+  skyColor: 0x7190,
+  cloudColor: 0xc0d6ef,
+  speed: 1
+})
+</script>
+
+  </body>
+</html>
